@@ -1,0 +1,130 @@
+body{
+  margin: 0;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 20px;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: justify;
+  }
+
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+  
+.column {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .titulo{
+    color: cornflowerblue;
+    text-align: center;
+    padding: 10px 0px 5px 30px;
+  }
+
+  .parrafo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    border: 10px solid white;
+    background-color: antiquewhite;
+    padding: 0px 10px 0px 10px;
+  }
+
+  /* BARRA DE NAVEGACION */
+
+.container-nav{
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  background-color: black;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.brand{
+  display: flex;
+  align-items: center;
+}
+
+.nav-links{
+  display: flex;
+}
+
+li>a {
+  padding: 8px 24px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: #1bf7de;
+}
+
+.button-menu-toggle{
+  display: none;
+}
+
+  /* RESPONSIVE */
+
+  @media (max-width: 768px) {
+      .column {
+        flex: 100%;
+      }
+
+      .nav-links{
+        display: none;
+      }
+
+
+      .button-menu-toggle{
+        display: block;
+        background-color: white;
+        border: none;
+        border-radius: 50px;
+        padding: 0 24px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      button:hover{
+        background-color: #1b8df7;
+        color: white
+      }
+
+      .nav-links.nav-links-responsive{
+        position: absolute;
+        display: block;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        top: 70px;
+        left: 0;
+        flex-direction: column;
+        margin-right: 40px;
+        padding-top: 200px;
+        align-items: center;
+        gap: 10px;
+        font-size: 40px;
+        color: black;
+      }
+
+    }
